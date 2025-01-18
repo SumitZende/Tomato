@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Navbar from "./components/navbar";
 function App() {
   return (
-    <div></div>
-  )
+    <div className="m-auto w-[80%]">
+      <Navbar />
+    </div>
+  );
 }
 
-export default App
+export default App;
