@@ -2,7 +2,7 @@
 
 export default function Header() {
   return (
-    <div className="bg-hero-section h-[34vw] my-[30px] mx-auto bg-contain relative">
+    <div className="bg-hero-section h-[34vw] my-[30px] mx-auto bg-contain relative bg-no-repeat">
       <div className="absolute flex flex-col items-start gap-[1.5vw] max-w-[50%] bottom-[10%] left-[6vw] animate-fade-in ">
         <h2 className="font-medium text-white text-[max(4.5vw,22px)]">
           Order your favourite food here

@@ -11,7 +11,8 @@ export default {
         'tomato': '#FF6347',
         'chardonte':"#fff4f2",
         'custom-gray': '#747474',
-       
+        'Eerie-Black':'#262626',
+        
       },
       transitionDuration: {
         '3000': '3000ms',
@@ -31,6 +32,20 @@ export default {
 
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.hide-scrollbar': {
+          /* Hide scrollbar for webkit-based browsers */
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+          /* Hide scrollbar for Firefox */
+          '-ms-overflow-style': 'none',
+          'scrollbar-width': 'none',
+        },
+      });
+    },
+  ],
 }
 
