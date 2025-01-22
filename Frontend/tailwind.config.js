@@ -29,7 +29,12 @@ export default {
           '100%': { opacity: '1' },
         },
       },
-
+      gridTemplateColumns: {
+        'auto-fill-240': 'repeat(auto-fill, minmax(240px, 1fr))',
+      },
+      boxShadow: {
+        '1': '0px 0px 10px #00000015',
+      }
     },
   },
   plugins: [
