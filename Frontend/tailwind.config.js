@@ -12,6 +12,8 @@ export default {
         'chardonte':"#fff4f2",
         'custom-gray': '#747474',
         'Eerie-Black':'#262626',
+        'Light-Silver':'#d9d9d9',
+        'Darck-Charcol':'#323232'
         
       },
       transitionDuration: {
@@ -31,6 +33,7 @@ export default {
       },
       gridTemplateColumns: {
         'auto-fill-240': 'repeat(auto-fill, minmax(240px, 1fr))',
+        '2fr':'2fr 1fr 1fr'
       },
       boxShadow: {
         '1': '0px 0px 10px #00000015',
