@@ -1,5 +1,6 @@
 import  { useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [menu,setMenu]=useState("menu");
@@ -10,10 +11,10 @@ export default function Navbar() {
                     max-lg:w-[140px] max-md:w-[120px]" />
       <ul className="flex gap-[20px] list-none text-navbar_font text-[18px] cursor-pointer  
                     max-lg:gap-5 max-lg:text-lg max-md:gap-3 max-md:text-base max-sm:hidden">
-        <li onClick={()=>setMenu("home")} className={menu==="home"?"pb-[2px] border-b-2 border-b-navbar_font":""}>home</li>
-        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"pb-[2px] border-b-2 border-b-navbar_font":""}>menu</li>
-        <li onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"pb-[2px] border-b-2 border-b-navbar_font":""}>mobile-app</li>
-        <li onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"pb-[2px] border-b-2 border-b-navbar_font":""}>contact-us</li>
+        <Link to={'/'} onClick={()=>setMenu("home")} className={menu==="home"?"pb-[2px] border-b-2 border-b-navbar_font":""}>home</Link>
+        <a href='#explore-menu' onClick={()=>setMenu("menu")} className={menu==="menu"?"pb-[2px] border-b-2 border-b-navbar_font":""}>menu</a>
+        <a href='#mobileApp-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"pb-[2px] border-b-2 border-b-navbar_font":""}>mobile-app</a>
+        <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"pb-[2px] border-b-2 border-b-navbar_font":""}>contact-us</a>
       </ul>
       <div className="flex items-center gap-[40px]
                       max-lg:gap-7 max-md:gap-5">
