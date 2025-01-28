@@ -6,7 +6,7 @@ export default function ExploredMenu({ category, setCategory }) {
       <h1 className="text-Eerie-Black font-medium text-4xl animate-fade-in">
         Explore our menu
       </h1>
-      <p className="max-w-[60%] text-gray-600 animate-fade-in">
+      <p className="max-w-[60%] text-gray-600 animate-fade-in max-lg:max-w-[100%] max-lg:text-sm">
         Choose from a diverse menu featuring a delectable array of dishes.Our
         mission is satisfy your cravings and elevate your dinning experience,one
         delicious meal at a time.

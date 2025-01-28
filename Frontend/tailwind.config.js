@@ -37,6 +37,11 @@ export default {
       },
       boxShadow: {
         '1': '0px 0px 10px #00000015',
+      },
+      screens:{
+        'lg':'1050px',
+        'md':'900px',
+        'sm':'750px'
       }
     },
   },
