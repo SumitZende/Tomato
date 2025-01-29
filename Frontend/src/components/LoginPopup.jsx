@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import React, { useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { useScrollLock } from "usehooks-ts";
 

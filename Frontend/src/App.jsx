@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import React, { useState } from "react";
 import Navbar from "./components/navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     {showlogin ? <LoginPopup setShowlogin={setShowlogin} />:<></>}
-
+    
     <div className="m-auto w-[80%]">
       <Navbar setShowlogin={setShowlogin}/>
       <Routes>
