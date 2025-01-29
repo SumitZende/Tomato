@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-=======
-<<<<<<< HEAD
-import  { useState } from "react";
-=======
-import React, { useState } from "react";
->>>>>>> fc348af0c4f34f46c3be952f35c4b836abc81ac1
->>>>>>> 52b9f5499beb5de6eacc0006f05461ebcd5b4b4c
+import { useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { useScrollLock } from "usehooks-ts";
 
