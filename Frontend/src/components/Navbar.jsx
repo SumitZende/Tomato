@@ -2,7 +2,7 @@ import  { useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({setShowlogin}) {
     const [menu,setMenu]=useState("menu");
   return (
     <div className="py-5 px-0 flex justify-between items-center ">
@@ -29,7 +29,8 @@ export default function Navbar() {
                     py-[10px] px-[30px] rounded-full cursor-pointer
                     transition duration-30000
                     hover:bg-chardonte
-                    max-lg:py-2 max-lg:px-6 max-md:py-[7px] max-md:px-5">
+                    max-lg:py-2 max-lg:px-6 max-md:py-[7px] max-md:px-5"
+            onClick={()=>setShowlogin(true)}>
                 Sign in
         </button>
       </div>
