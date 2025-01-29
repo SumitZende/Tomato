@@ -13,7 +13,7 @@ export default {
         'custom-gray': '#747474',
         'Eerie-Black':'#262626',
         'Light-Silver':'#d9d9d9',
-        'Darck-Charcol':'#323232'
+        'Darck-Charcol':'#323232',
         
       },
       transitionDuration: {
@@ -42,7 +42,10 @@ export default {
         'lg':'1050px',
         'md':'900px',
         'sm':'750px'
-      }
+      },
+      zIndex: {
+        '1': '1',
+      },
     },
   },
   plugins: [
