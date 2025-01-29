@@ -1,8 +1,10 @@
-import  { useState } from "react";
+import  { useContext, useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { Link } from "react-router-dom";
+import { StoreContext } from "../context/StoreContext";
 
 export default function Navbar({setShowlogin}) {
+  const {getTotalCartAmount}=useContext(StoreContext)
     const [menu,setMenu]=useState("menu");
   return (
     <div className="py-5 px-0 flex justify-between items-center ">
@@ -25,7 +27,7 @@ export default function Navbar({setShowlogin}) {
           <Link to="/cart">
             <img src={assets.basket_icon} alt="" 
             className="max-lg:w-6 max-md:w-5"  />
-            <div className="absolute min-w-[10px] min-h-[10px] bg-tomato rounded-[5px] top-[-8px] right-[-8px]"></div> 
+            <div className={getTotalCartAmount()===0?"":"absolute min-w-[10px] min-h-[10px] bg-tomato rounded-[5px] top-[-8px] right-[-8px]"}></div> 
           </Link>
         </div>
         <button 

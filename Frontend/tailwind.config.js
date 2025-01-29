@@ -33,7 +33,8 @@ export default {
       },
       gridTemplateColumns: {
         'auto-fill-240': 'repeat(auto-fill, minmax(240px, 1fr))',
-        '2fr':'2fr 1fr 1fr'
+        '2fr':'2fr 1fr 1fr',
+        '1fr':'1fr 1.5fr 1fr 1fr 1fr  0.5fr'
       },
       boxShadow: {
         '1': '0px 0px 10px #00000015',
