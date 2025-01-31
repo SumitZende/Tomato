@@ -1,8 +1,8 @@
-import Header from '../../components/Header'
-import ExploredMenu from '../../components/ExploredMenu'
+import Header from '../components/Header'
+import ExploredMenu from '../components/ExploredMenu'
 import { useState } from 'react'
-import FoodDisplay from '../../components/FoodDisplay'
-import AppDownload from '../../components/AppDownload'
+import FoodDisplay from '../components/FoodDisplay'
+import AppDownload from '../components/AppDownload'
 
 export default function Home() {
   const [category,setCategory]=useState('All')
