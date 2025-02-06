@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+US+Modern:wght@100..400&display=swap');
+@import "tailwindcss";
 
 *{
   padding: 0;
