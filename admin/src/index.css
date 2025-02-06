@@ -2,8 +2,7 @@
 @import "tailwindcss";
 
 *{
-  padding: 0;
-  margin: 0;
+
   box-sizing: border-box;
   font-family: Outfit;
   scroll-behavior: smooth;
@@ -16,8 +15,7 @@ a{
   text-decoration: none;
   color: inherit;
 }
-hr{
-  border:none;
-  height: 1px;
-  background-color: #fcfcfc;
+
+@theme{
+  --tomato: #FF6347,
 }
