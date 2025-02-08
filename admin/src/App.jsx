@@ -4,10 +4,12 @@ import {Route, Routes} from 'react-router-dom'
 import AddItem from './pages/AddItem'
 import List from "./pages/List";
 import Order from "./pages/Order";
+import { ToastContainer } from 'react-toastify';
 
 export default function App() {
   return (
     <div>
+      <ToastContainer/>
       <Navbar/>
       <hr />
       <div className="flex ">
