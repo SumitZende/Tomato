@@ -4,12 +4,12 @@ import { StoreContext } from "../context/StoreContext"
 
 export default function FoodItem({id,name,description,price,image}) {
 
-  const {cartItem,addToCart,removeFromCart}=useContext(StoreContext)
+  const {cartItem,addToCart,removeFromCart,url}=useContext(StoreContext)
   return (
     <div className='w-full m-auto rounded-2xl shadow-1 duration-3000 animate-fade-in'>
         <div className="relative">
             <img  
-              src={image}
+              src={url+'/images/'+image}
              className='w-auto rounded-tl-[15px] rounded-tr-[15px] rounded-bl-[0px] rounded-br-[0px] ' 
              alt={name} />
              {!cartItem[id]
