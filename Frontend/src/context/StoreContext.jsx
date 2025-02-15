@@ -9,7 +9,7 @@ export const StoreContextProvider =(props)=>{
     const [cartItem,setCartItem]=useState({})
     const url='http://localhost:4000'
     const [token,setToken]=useState()
-    const [food_list,setFood_List]=useState()
+    const [food_list,setFood_List]=useState([])
 
     const addToCart=(itemid)=>{
         if(!cartItem[itemid]){
