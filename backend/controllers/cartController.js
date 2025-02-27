@@ -48,9 +48,13 @@ const removeCartItem = async(req,res)=>{
 const fetchCartItem = async(req,res)=>{
    try {
       let userData = await userModel.findById(req.body.userId)
+      console.log(userData);
+      
       let cartData = await userData.cartData
+      console.log(cartData);
+      
       if(cartData){
-         res.json({success:true,message:cartData})
+         res.json({success:true,cartData})
 
       }
       
