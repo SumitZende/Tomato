@@ -24,12 +24,17 @@ export default {
       },
       animation: {
         'fade-in': 'fadeIn 1s ease-in',
+        'rotate': 'rotate 1s infinite'
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        rotate: {
+          '0%': { rotate: '0deg' }, 
+          '100%': { rotate: '360deg' },
+        }
       },
       gridTemplateColumns: {
         'auto-fill-240': 'repeat(auto-fill, minmax(240px, 1fr))',
