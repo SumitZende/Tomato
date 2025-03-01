@@ -119,9 +119,9 @@ export default function Navbar({ setShowlogin }) {
   {/* Dropdown Menu */}
   <ul className="absolute hidden right-0 z-10 bg-white shadow-md rounded-md 
                  group-hover:block w-40 p-2 border border-gray-200">
-    <li className="flex items-center p-2 hover:bg-gray-100 cursor-pointer">
+    <li onClick={()=>navigate('/myOrders')} className="flex items-center p-2 hover:bg-gray-100 cursor-pointer">
       <img src={assets.bag_icon} alt="bag_icon" className="w-6 h-6" />
-      <span className="ml-2">My Bag</span>
+      <span className="ml-2">Orders</span>
     </li>
     <hr className="border-gray-300 my-1" />
     <li onClick={logout} className="flex items-center p-2 hover:bg-gray-100 cursor-pointer">

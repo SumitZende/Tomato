@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Navbar from "./components/navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import LoginPopup from "./components/LoginPopup";
 import { ToastContainer } from 'react-toastify';
 import Verify from "./pages/Verify";
+import Orders from "./pages/Orders";
 function App() {
   const [showlogin,setShowlogin]=useState(false)
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/order' element={<PlaceOrder/>}/>
         <Route path='/verify' element={<Verify/>}/>
+        <Route path='/myOrders' element={<Orders/>}/>
       </Routes>
     </div>
     <Footer/>

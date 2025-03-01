@@ -2,8 +2,10 @@ import { useContext, useEffect, useState } from "react";
 import { StoreContext } from "../context/StoreContext";
 import { toast } from "react-toastify";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 export default function PlaceOrder() {
   const { getTotalCartAmount,food_list,token,url,cartItem } = useContext(StoreContext);
+  const navigate = useNavigate()
 
   const [data,setData] = useState({
     firstName:'',
@@ -54,6 +56,14 @@ export default function PlaceOrder() {
     }
   }
 
+  useEffect(()=>{
+    if(!token){
+      navigate('/cart')
+    }
+    else if(getTotalCartAmount()===0){
+      navigate('/cart')
+    }
+  },[token])
 
   return (
     <form  onSubmit={intialzeOrder} className="flex items-start justify-between gap-48 mt-[100px]">
