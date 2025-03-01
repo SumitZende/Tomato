@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { assets } from '../assets/frontend_assets/assets'
 
 export default function AppDownload() {

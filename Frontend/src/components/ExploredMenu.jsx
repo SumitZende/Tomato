@@ -1,4 +1,5 @@
 import { menu_list } from "../assets/frontend_assets/assets";
+import PropTypes from 'prop-types';
 
 export default function ExploredMenu({ category, setCategory }) {
   return (
@@ -39,3 +40,8 @@ export default function ExploredMenu({ category, setCategory }) {
     </div>
   );
 }
+
+ExploredMenu.propTypes = {
+  category: PropTypes.string.isRequired,
+  setCategory: PropTypes.func.isRequired,
+};

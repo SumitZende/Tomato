@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { assets } from "../assets/frontend_assets/assets"
 import { StoreContext } from "../context/StoreContext"
+import PropTypes from 'prop-types';
 
 export default function FoodItem({id,name,description,price,image}) {
 
@@ -39,4 +40,12 @@ export default function FoodItem({id,name,description,price,image}) {
 
     </div>
   )
+}
+
+FoodItem.propTypes={
+      id:PropTypes.string.isRequired,
+      name:PropTypes.string.isRequired,
+      description:PropTypes.string.isRequired,
+      price:PropTypes.string.isRequired,
+      image:PropTypes.string.isRequired,
 }

@@ -3,6 +3,7 @@ import { assets } from "../assets/frontend_assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { StoreContext } from "../context/StoreContext";
 import { toast } from "react-toastify";
+import PropTypes from "prop-types";
 
 export default function Navbar({ setShowlogin }) {
   const { getTotalCartAmount, setToken, token } = useContext(StoreContext);
@@ -135,4 +136,8 @@ export default function Navbar({ setShowlogin }) {
       </div>
     </div>
   );
+}
+
+Navbar.propTypes={
+  setShowlogin:PropTypes.bool.isRequired,
 }

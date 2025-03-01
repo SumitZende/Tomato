@@ -1,9 +1,10 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { useScrollLock } from "usehooks-ts";
 import { StoreContext } from "../context/StoreContext";
 import { toast } from "react-toastify";
 import axios from 'axios'
+import PropTypes from 'prop-types';
 
 export default function LoginPopup({ setShowlogin }) {
   const [currenState, setCurrentState] = useState("Sign Up");
@@ -137,4 +138,8 @@ export default function LoginPopup({ setShowlogin }) {
       </div>
     </form>
   );
+}
+
+LoginPopup.propTypes={
+  setShowlogin:PropTypes.bool.isRequired,
 }

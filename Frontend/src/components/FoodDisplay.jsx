@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { StoreContext } from "../context/StoreContext.jsx";
 import FoodItem from "./FoodItem";
+import PropTypes from 'prop-types';
 
 export default function FoodDisplay({ category }) {
   const { food_list } = useContext(StoreContext);
@@ -30,3 +31,7 @@ export default function FoodDisplay({ category }) {
     </div>
   );
 }
+
+FoodDisplay.propTypes = {
+  category: PropTypes.string.isRequired,
+};
