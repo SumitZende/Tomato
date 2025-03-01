@@ -83,4 +83,33 @@ const useOrder = async (req,res)=>{
         res.json({success:false,message:"error"})
     }
 }
-export {placeOrder,verifyOrder,useOrder}
+
+
+//listing all order for admin pannel
+const listOrder = async (req,res)=>{
+    try {
+        const order = await orderModel.find({})
+        if(order){
+            res.json({success:true,data:order})
+        }
+        else{
+            res.json({success:false,message:"No Data Found"})
+        }
+    } catch (error) {
+        console.log(error);
+        res.json({success:false,message:"error"})
+        
+    }
+}
+
+//update order status
+const updateOrder = async(req,res)=>{
+    try {
+        const order = await orderModel.findByIdAndUpdate(req.body.orderId,{status:req.body.status})
+        res.json({success:true,message:"Status Updated"})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false,message:"error"})
+    }
+}
+export {placeOrder,verifyOrder,useOrder,listOrder,updateOrder}
